@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./public/give hand.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://storage.googleapis.com/rizq-ramadhan-bucket/icon.jpeg"
+    />
+    <title>Form Demo</title>
+  </head>
+  <body class="container">
+    <div class="">
+      <form class="main" id="postForm">
+        <h1 class="pb-3">Input your username!</h1>
+
+        <div class="input-section">
+          <span class="">Username</span>
+          <input name="username" type="text" class="form-control" />
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+
+        <div>
+          <div id="username-warning">
+            <p style="color: red">Username already exist!</p>
+          </div>
+
+          <div id="len-warning">
+            <p style="color: red">
+              Length of the username have to be more than 4 characters!
+            </p>
+          </div>
+        </div>
+      </form>
+
+      <div class="pt-3" id="listPost"></div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>

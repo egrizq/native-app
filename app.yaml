@@ -1,0 +1,21 @@
+runtime: python310
+
+handlers:
+  - url: /css
+    static_dir: css
+    mime_type: text/css
+
+  - url: /scripts
+    static_dir: scripts
+    mime_type: application/javascript
+
+  - url: /public
+    static_dir: public
+
+  - url: /(.*\.(gif|png|jpg|ico|js|css|woff|woff2|ttf))$
+    static_files: \1
+    upload: .*\.(gif|png|jpg|ico|js|css|woff|woff2|ttf)$
+
+  - url: /.*
+    static_files: index.html
+    upload: index.html

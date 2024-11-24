@@ -9,9 +9,9 @@ handlers:
     static_dir: scripts
     mime_type: application/javascript
 
-  - public: /public
+  - url: /public
     static_dir: public
 
   - url: /.*
-    static_file: index.html
+    static_files: index.html
     upload: index.html
